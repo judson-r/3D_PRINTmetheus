@@ -1,0 +1,45 @@
+A
+	Addressable - in reference to LEDs, it means that each LED in that strip or matrix can be targeted and told to do a specific action, like getting brighter or changing color
+	Amperage - Measure of current
+B
+	Buck (converter) - takes a voltage (24V in this case) and knocks it down to a lower voltage (typically 12V or 5V in this case)
+C
+	Circuit - a closed loop that electricity can flow through, electricity must start and end in the same place (typically a battery or wall power supply)
+	Current - I like to think of this as the width of a bridge (see volts) allows more people to get across when a wider bridge, or effectively the amount of electricity
+D
+E
+F
+	FDM (Fused Deposition Modeling) - the process of placing material in layers that bond together to create a model
+	FFF (Fused Filament Fabrication) - FDM used to make something
+	Firmware - this is the software that is specific to the hardware it is used on
+G
+	GPIO (General Purpose Input and Output) - allows you to control things that are very simple, like an LED or Relay, on a Raspberry Pi they are the pins sticking up
+H
+	Hardware - electrically, the components that code is used on
+I
+J
+K
+L
+	LED (Light Emitting Diode) - a very efficient (and typically tiny) light bult, uses electricity jump a gap on certain materials to emit light with very little heat    Recommended resource: https://www.youtube.com/watch?v=AF8d72mA41M
+M
+N
+O
+P
+	Power - the "punch" of electricity, or the rate of transfer of electricty in a circuit
+Q
+R
+	Raspberry Pi - a small computer (just like a laptop) with decent processing power, but only the computer chip, ports (USB, HDMI, CSI, USB-C), and GPIO, all in the footprint of a credit card
+	Relay - acts like a light switch that can be activated by electricity, it uses an electromagnet to get two pieces of metal to contact and make a circuit
+	RepRap - a DIY 3D printer
+S
+	Software - very advanced code that controls inputs and outputs
+T
+	Transistor - acts like a light switch that can be activated by electricty but you can toggle it REALLY fast, uses some cool chemistry
+U
+V
+	Volts/Voltage - I like to think of this as the strength of a man on the bridge (see current) 5V is a baby and 50V is a solider, or the "energy potential"
+W
+	Wattage - the measurement for power
+X
+Y
+Z
