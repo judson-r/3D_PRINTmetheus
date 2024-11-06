@@ -1,1 +1,6 @@
 Links directly to Manufacturer's Page, or official distributors!
+
+Tested:
+
+Should be drop-in capable:
+  Any 3D printer that can use Marlin 2.0 firmware (https://marlinfw.org/docs/hardware/boards.html#board-list) that has been customized for this system
