@@ -1,0 +1,20 @@
+Any light can be used if you know what your doing, but we recommend that you use LEDs that can be powered by 24V or below (12V, 5V), for multi-color/addressable LEDs we support W2812
+
+For 24V, no buck converter needed, anything below will need a buck converter, refer to power control for more.
+
+
+Tested (24V):
+
+Should be drop-in capable (24V):
+
+
+
+Tested (12V);
+
+Should be drop-in capable (12V):
+
+
+
+Tested (5V):
+
+Should be drop-in capable (5V):
