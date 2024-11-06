@@ -1,0 +1,89 @@
+3D_PRINTmetheus
+A custom 3D printer controller system
+
+Goals: (no order)
+	-Remotely level the bed
+	-Remotely upload file to 3D printer and start print
+	-Notify phone of issue and stop (UPS to check power failure)
+	-Weigh the spools and preemptively warn you
+	-Camera viewer with lighting control
+	-AI failure detection
+	-Maintenance reminder
+	-Status screen (16x2 LCD or something similar)
+	-Arduino Integration (If using laptop)
+  	-Check kWh used and calculate cost of printing
+
+Electrical Goals:
+  	-Fewest wire strands possible (use USBs or other integrated cables)
+  	-No custom interaction with AC power (find a premade outlet relay)
+  	-Based off of 24V
+  	-All components not location dependent (computer, power, display, etc) fit within Ender3 footprint, and can be placed directly underneath and Ender3
+  	-All orderable off Amazon, Adafruit
+
+Plan
+  	Sections in Order:
+    	-Main system development
+			-Uses Linux
+			-Needs to support multiple printers and related components
+			-Easy configuration at any time
+				-Everything is toggleable
+			-Needs to be distributable (easy to download/install, good README on github, not hard coded IP addresses or anything)
+			-Custom OS for Pi?
+
+    	-3D printer control over USB (using G-code commands via Marlin Firmware)
+			-Custom firmware using the official Marlin 2.0 and presets
+			-Need a USB cable per printer
+			-Send G-code commands over the USB as a virtual serial port
+			-DO NOT actively send g-code to printers, download file to SD card and start it
+
+    	-Camera integration
+			-Probably using something like mjpeg-viewer
+
+		-Remote control
+			Remote Interface Options:
+				Port Forwarding Website
+					Cyber security issue
+				Free Website Hoster
+					Can it be done via code? Want to be able to distribute it without a fuss
+				Phone app
+					Will probably still need a website
+					Probably an end goal
+				Discord
+					People already use it
+					Bad for video and commands
+			Capabilities Needed:
+				-Turn off printer (at least stop)
+				-View camera
+				-Upload files
+				-Other things later
+		-Lighting control
+			-RGB and regular LED capabilities
+			-Need to be able to specify which one
+			-Attached to a specific printer or for all?
+			-Add Pi outputs or Arduino, so old laptops can be used
+
+    	-AI detection of spaghetti, clog, first layers issues (in that order)
+			-Needs to be lightweight (YOLO model?)
+				-Should be every 1-30 seconds
+			-Should be able to toggle which ones matter
+			-Priorities in order:
+				Spaghetti detection
+				Clog detection
+				First layer/warping issues
+				Maybe stringiness?
+				Other small model defects for ultra nice looking prints?
+
+		-External component control
+			-Use the unofficial KASA api to wirelessly control outlets for 3D printers (maybe read kWh)
+			-Something that cleans build plate?
+			-Add Pi outputs or Arduino, so old laptops can be used
+			-Filament dryer box control
+
+		-External Inputs
+			-Add Pi inputs or Arduino serial, so old laptops can be used
+			-Replacement spool holder that weighs the spool and filament (can select which company spool is from so it automatically subtracts that weight, tell if new spool and it'll calibrate)
+			-Filament humidity
+
+		-”Plugin” capabilities
+			-IDK seems professional
+
