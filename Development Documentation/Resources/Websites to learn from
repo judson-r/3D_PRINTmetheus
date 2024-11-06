@@ -1,0 +1,6 @@
+Format:
+Company/Project name (brief description of how its useful/what it is) - website link
+
+Marlin 2.0 (3D printer Firmware base) - https://marlinfw.org/docs/basics/introduction.html
+RepRap (G-code formats and commands) - https://reprap.org/wiki/G-code#M20:_List_SD_card
+Kasa-Python (Interface to use Kasa brand of smartplugs and lights) - https://github.com/python-kasa/python-kasa/blob/master/README.md
