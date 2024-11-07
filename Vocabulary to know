@@ -21,11 +21,12 @@ J
 K
 L
 	LED (Light Emitting Diode) - a very efficient (and typically tiny) light bult, uses electricity jump a gap on certain materials to emit light with very little heat    Recommended resource: https://www.youtube.com/watch?v=AF8d72mA41M
+	Linux - Windows but for nerds, or a lightweight OS that has more development and control capabilities at the cost of ease of use
 M
 N
 O
 P
-	Power - the "punch" of electricity, or the rate of transfer of electricty in a circuit
+	Power - the "punch" of electricity, or the rate of transfer of electricty in a circuit, Volts*Amps=Power
 Q
 R
 	Raspberry Pi - a small computer (just like a laptop) with decent processing power, but only the computer chip, ports (USB, HDMI, CSI, USB-C), and GPIO, all in the footprint of a credit card
